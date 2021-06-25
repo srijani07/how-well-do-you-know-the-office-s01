@@ -1,0 +1,1 @@
+A CLI app made using basic JavaScript and chalk npm
