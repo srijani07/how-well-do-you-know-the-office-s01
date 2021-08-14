@@ -1,5 +1,6 @@
 var readlineSync = require('readline-sync');
 const chalk = require('chalk');
+
 var questionOne = {
   question :  "Which way gets more information passed around the office?",
   answer : "Water cooler gossip"
@@ -67,6 +68,9 @@ var highscores = [highscoreOne, highscoreTwo];
 
 
 var questions = [questionOne, questionTwo, questionThree, questionFour, questionFive, questionSix, questionSeven, questionEight, questionNine ]
+
+var userName = readlineSync.question("Hey! What is your name? ");
+console.log("Hello, "+userName);
 
 answeroneOptions = ["Office memos","Water cooler gossip"];
 indexOne = readlineSync.keyInSelect(answeroneOptions, questions[0].question);
